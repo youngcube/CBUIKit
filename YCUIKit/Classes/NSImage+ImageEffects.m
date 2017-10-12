@@ -10,10 +10,10 @@
 #import <objc/objc-runtime.h>
 
 #ifndef _TING_
-CGContextRef UIGraphicsGetCurrentContext(void)
-{
-    return (CGContextRef)[[NSGraphicsContext currentContext] graphicsPort];
-}
+//CGContextRef UIGraphicsGetCurrentContext(void)
+//{
+//    return (CGContextRef)[[NSGraphicsContext currentContext] graphicsPort];
+//}
 #endif
 
 BOOL XUISwizzleMethod(Class cls, char plusOrMinus, SEL selA, SEL selB)

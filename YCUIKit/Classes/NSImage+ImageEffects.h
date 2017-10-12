@@ -9,7 +9,7 @@
 #import <Cocoa/Cocoa.h>
 
 #ifndef _TING_
-CGContextRef UIGraphicsGetCurrentContext(void);
+//CGContextRef UIGraphicsGetCurrentContext(void);
 #endif
 BOOL XUIAliasMethod(Class cls, char plusOrMinus, SEL originalSel, SEL aliasSel);
 BOOL XUISwizzleMethod(Class cls, char plusOrMinus, SEL originalSel, SEL replacementSel);

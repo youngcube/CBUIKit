@@ -10,7 +10,7 @@
 #import <objc/objc-runtime.h>
 #import <QuartzCore/QuartzCore.h>
 
-@implementation NSScreen (EUUIKit)
+@implementation NSScreen (YCUIKit)
 
 - (CGFloat)scale
 {
@@ -24,7 +24,7 @@
 
 @end
 
-@implementation NSValue (EUUIKit)
+@implementation NSValue (YCUIKit)
 
 - (CGRect)CGRectValue
 {

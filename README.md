@@ -5,6 +5,8 @@
 [![License](https://img.shields.io/cocoapods/l/YCUIKit.svg?style=flat)](http://cocoapods.org/pods/YCUIKit)
 [![Platform](https://img.shields.io/cocoapods/p/YCUIKit.svg?style=flat)](http://cocoapods.org/pods/YCUIKit)
 
+A simple "UITableView" for macOS.
+
 ## Example
 
 To run the example project, clone the repo, and run `pod install` from the Example directory first.

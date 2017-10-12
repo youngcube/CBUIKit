@@ -1,5 +1,5 @@
 //
-//  EUUIKit.h
+//  YCUIKit.h
 //  ting_macOS
 //
 //  Created by cube on 2017/1/9.

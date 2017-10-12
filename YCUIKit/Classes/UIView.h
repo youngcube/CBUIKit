@@ -24,12 +24,12 @@ typedef NS_OPTIONS(NSUInteger, UIViewAutoresizing) {
 - (void)uiviewDidLayout:(UIView *_Nonnull)view;
 @end
 
-@interface NSScreen (EUUIKit)
+@interface NSScreen (YCUIKit)
 - (CGFloat)scale;
 + (CGFloat)scale;
 @end
 
-@interface NSValue (EUUIKit)
+@interface NSValue (YCUIKit)
 + (NSValue *)valueWithCGRect:(CGRect)rect;
 - (CGRect)CGRectValue;
 @end
