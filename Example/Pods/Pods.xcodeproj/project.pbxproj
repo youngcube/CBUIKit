@@ -1,0 +1,643 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0351FCD58FC7022D5787CA4AD87DAE1A /* UIViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 7C571907CF43CE7D7F5B6AF3F8BA8CDF /* UIViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		06100A9BC0F877CF93B5B4B9322E91CF /* UIActivityIndicatorView.h in Headers */ = {isa = PBXBuildFile; fileRef = A9F051C805794394AF439C588799AEEE /* UIActivityIndicatorView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		08E524F5B61CEB3D35BE35F6C28789C2 /* UITableView.h in Headers */ = {isa = PBXBuildFile; fileRef = DC9082C79895F095F1A2977903F91187 /* UITableView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0B06F0336CF1694D0C5DFDC5F390A3FE /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 270DD1219F1E6CF00379D39F252D87C6 /* Cocoa.framework */; };
+		179063151F6BA7260FCA833DABE1FF20 /* YCUIKit-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = B4F992C9094BB80008717960975916D0 /* YCUIKit-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2A112AA1DD05A102813ECBB76AE885EB /* UILabel.h in Headers */ = {isa = PBXBuildFile; fileRef = 14A017564D24364BE29CFB4B520252F4 /* UILabel.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		33DD4543C15556154FABD7194ED01D69 /* UIButton.h in Headers */ = {isa = PBXBuildFile; fileRef = 0B08FC55B8EF1069AC085A46D577D02A /* UIButton.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3420747B98411FC908E7A8F039D80DE1 /* UIImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = 358E5122179306C12E8DA2489F609F0B /* UIImageView.m */; };
+		377FC936974B987A779687829E5D2B2C /* UISlider.m in Sources */ = {isa = PBXBuildFile; fileRef = 00A4FA2E71B12C71D2F184EB628B5176 /* UISlider.m */; };
+		395916B5A66CC03691850D76483AB20E /* UITextView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A4D2A10A667A590BACB0A7D4CE3DE19 /* UITextView.m */; };
+		3D518EC1D7C99D84B7F2F9407D3CB710 /* UIWebView.h in Headers */ = {isa = PBXBuildFile; fileRef = 4F84732A5D542963D9A81E90DB500E54 /* UIWebView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4F1C4C138F59ECD3D7E4D48C4616671F /* YCUIKit-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 73E7B8D7DCD3D9861FE442F8F6BF72B2 /* YCUIKit-dummy.m */; };
+		5C81203B7CD1C934E2C3C7C0108CB5C4 /* UIButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 2DB44301D578381AFCF138AC0BA47B3F /* UIButton.m */; };
+		6CA1BAF482CE0ABA6BE773864DCD875E /* UIView.h in Headers */ = {isa = PBXBuildFile; fileRef = 6CD7F4549186A602A157892C761A5876 /* UIView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		703B6222B40DBE7F758533E237DC21D7 /* UITextView.h in Headers */ = {isa = PBXBuildFile; fileRef = FD3111692925BF67D3D59A8292A11886 /* UITextView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		93BE028DFC6CA6550B263E4E639173FB /* Pods-YCUIKit_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D02A494C38F84D930DC274196603158 /* Pods-YCUIKit_Example-dummy.m */; };
+		9897C77EFB1567C5B867EDA9FBE6937B /* UIWebView.m in Sources */ = {isa = PBXBuildFile; fileRef = 64E89C5EB3A4F75AF78FE04DAAB0373C /* UIWebView.m */; };
+		98C75266F3CA5BAF1AECCA6245D3EB23 /* UITableView.m in Sources */ = {isa = PBXBuildFile; fileRef = DCE364F6BF6C7787B572FFA17A10BD76 /* UITableView.m */; };
+		A7086B8E81FCD716B7CAA559DD69DEF6 /* Pods-YCUIKit_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = A4755B8CCA00631FA0533EF632720809 /* Pods-YCUIKit_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		ABF870F568060D5C6FA7B85FD8357DA1 /* YCUIKit.h in Headers */ = {isa = PBXBuildFile; fileRef = E8472B7F95613591D60FF67327898053 /* YCUIKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B708539BC53904A195C8280C620C49D3 /* NSImage+ImageEffects.m in Sources */ = {isa = PBXBuildFile; fileRef = A1DF46AF98AC21CC542EBED3C8D346DC /* NSImage+ImageEffects.m */; };
+		B783D3CE4C8B6DF24CDAFCA7CD6E6566 /* UISlider.h in Headers */ = {isa = PBXBuildFile; fileRef = 8A7894B45DE95DA797C4C55B1D27ACC9 /* UISlider.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D56BA009F0F8E507CB37D5C4958463A7 /* UIActivityIndicatorView.m in Sources */ = {isa = PBXBuildFile; fileRef = 843FC12BF5E531D20352341B8C6E35BB /* UIActivityIndicatorView.m */; };
+		D6DAF15C200CBB9E6312FAB805E538CF /* UILabel.m in Sources */ = {isa = PBXBuildFile; fileRef = FD5CEF0A257CCB760CA4432B936E39B0 /* UILabel.m */; };
+		D87D076B4973A8D9AD95CEF65AE25D2E /* UIView.m in Sources */ = {isa = PBXBuildFile; fileRef = F75F29E377B1D580CAB008CE23C0D580 /* UIView.m */; };
+		DCEB7768DA42308024FBB2BD5525D78C /* UIImageView.h in Headers */ = {isa = PBXBuildFile; fileRef = 8BFADF32A44E39DF0B5A64B1A2A965B7 /* UIImageView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		DF32934A8DAB1945BBB036415F9E3E90 /* NSImage+ImageEffects.h in Headers */ = {isa = PBXBuildFile; fileRef = EBF90CB90B9568A9ECC31791ABB43C13 /* NSImage+ImageEffects.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F3629257C52D5C91E8BBE70939B7DFED /* UIViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6778EF960A37ABF68ACFE542CB28FD08 /* UIViewController.m */; };
+		FF9DE1008BFA23BDB63821269B3D8C80 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 270DD1219F1E6CF00379D39F252D87C6 /* Cocoa.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		AFF8CF7364D8535ED708936DE141D39F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BA3CCD62D562A5A3C4DDEC5A5E012DEC;
+			remoteInfo = YCUIKit;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		00A4FA2E71B12C71D2F184EB628B5176 /* UISlider.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = UISlider.m; path = YCUIKit/Classes/UISlider.m; sourceTree = "<group>"; };
+		060C0DB666D4C05A3EE2E592C83306C4 /* YCUIKit.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = YCUIKit.xcconfig; sourceTree = "<group>"; };
+		0B08FC55B8EF1069AC085A46D577D02A /* UIButton.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = UIButton.h; path = YCUIKit/Classes/UIButton.h; sourceTree = "<group>"; };
+		1110518FC098C3DF102CF120ADBC6D59 /* YCUIKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = YCUIKit.framework; path = YCUIKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		14A017564D24364BE29CFB4B520252F4 /* UILabel.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = UILabel.h; path = YCUIKit/Classes/UILabel.h; sourceTree = "<group>"; };
+		1C97EB4BAF2E2C442D728BA8A9FEA25D /* Pods-YCUIKit_Example-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-YCUIKit_Example-resources.sh"; sourceTree = "<group>"; };
+		1CBE455F671951350541CE6A6BDC8C29 /* Pods_YCUIKit_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_YCUIKit_Example.framework; path = "Pods-YCUIKit_Example.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		270DD1219F1E6CF00379D39F252D87C6 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk/System/Library/Frameworks/Cocoa.framework; sourceTree = DEVELOPER_DIR; };
+		2D02A494C38F84D930DC274196603158 /* Pods-YCUIKit_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-YCUIKit_Example-dummy.m"; sourceTree = "<group>"; };
+		2DB44301D578381AFCF138AC0BA47B3F /* UIButton.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = UIButton.m; path = YCUIKit/Classes/UIButton.m; sourceTree = "<group>"; };
+		2F4DA1CAC29DB1565D20F657BDAABC90 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3486E2A3C6FBBF566957B9E3CF72B410 /* Pods-YCUIKit_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-YCUIKit_Example.debug.xcconfig"; sourceTree = "<group>"; };
+		358E5122179306C12E8DA2489F609F0B /* UIImageView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = UIImageView.m; path = YCUIKit/Classes/UIImageView.m; sourceTree = "<group>"; };
+		3C0890B9AA37066D024E9B20417109AA /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3EA5CA2C7CE31F2F1D46661ADCD5F4DA /* Pods-YCUIKit_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-YCUIKit_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
+		4A4D2A10A667A590BACB0A7D4CE3DE19 /* UITextView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = UITextView.m; path = YCUIKit/Classes/UITextView.m; sourceTree = "<group>"; };
+		4F84732A5D542963D9A81E90DB500E54 /* UIWebView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = UIWebView.h; path = YCUIKit/Classes/UIWebView.h; sourceTree = "<group>"; };
+		5B1FE71500E954BEB7B15A47962798C6 /* Pods-YCUIKit_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-YCUIKit_Example-frameworks.sh"; sourceTree = "<group>"; };
+		62D7ECB04FF7F3A4CB24C1A6386CD1BB /* Pods-YCUIKit_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-YCUIKit_Example.release.xcconfig"; sourceTree = "<group>"; };
+		64E89C5EB3A4F75AF78FE04DAAB0373C /* UIWebView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = UIWebView.m; path = YCUIKit/Classes/UIWebView.m; sourceTree = "<group>"; };
+		6778EF960A37ABF68ACFE542CB28FD08 /* UIViewController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = UIViewController.m; path = YCUIKit/Classes/UIViewController.m; sourceTree = "<group>"; };
+		6CD7F4549186A602A157892C761A5876 /* UIView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = UIView.h; path = YCUIKit/Classes/UIView.h; sourceTree = "<group>"; };
+		73E7B8D7DCD3D9861FE442F8F6BF72B2 /* YCUIKit-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "YCUIKit-dummy.m"; sourceTree = "<group>"; };
+		7C571907CF43CE7D7F5B6AF3F8BA8CDF /* UIViewController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = UIViewController.h; path = YCUIKit/Classes/UIViewController.h; sourceTree = "<group>"; };
+		7F721AA1D3E6555E3E3798160AFDE07B /* Pods-YCUIKit_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-YCUIKit_Example-acknowledgements.plist"; sourceTree = "<group>"; };
+		843FC12BF5E531D20352341B8C6E35BB /* UIActivityIndicatorView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = UIActivityIndicatorView.m; path = YCUIKit/Classes/UIActivityIndicatorView.m; sourceTree = "<group>"; };
+		8A7894B45DE95DA797C4C55B1D27ACC9 /* UISlider.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = UISlider.h; path = YCUIKit/Classes/UISlider.h; sourceTree = "<group>"; };
+		8BFADF32A44E39DF0B5A64B1A2A965B7 /* UIImageView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = UIImageView.h; path = YCUIKit/Classes/UIImageView.h; sourceTree = "<group>"; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		A1DF46AF98AC21CC542EBED3C8D346DC /* NSImage+ImageEffects.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSImage+ImageEffects.m"; path = "YCUIKit/Classes/NSImage+ImageEffects.m"; sourceTree = "<group>"; };
+		A4755B8CCA00631FA0533EF632720809 /* Pods-YCUIKit_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-YCUIKit_Example-umbrella.h"; sourceTree = "<group>"; };
+		A9F051C805794394AF439C588799AEEE /* UIActivityIndicatorView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = UIActivityIndicatorView.h; path = YCUIKit/Classes/UIActivityIndicatorView.h; sourceTree = "<group>"; };
+		B23815951EEA4D22C84D621144C1F766 /* YCUIKit.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = YCUIKit.modulemap; sourceTree = "<group>"; };
+		B4F992C9094BB80008717960975916D0 /* YCUIKit-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "YCUIKit-umbrella.h"; sourceTree = "<group>"; };
+		DC9082C79895F095F1A2977903F91187 /* UITableView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = UITableView.h; path = YCUIKit/Classes/UITableView.h; sourceTree = "<group>"; };
+		DCE364F6BF6C7787B572FFA17A10BD76 /* UITableView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = UITableView.m; path = YCUIKit/Classes/UITableView.m; sourceTree = "<group>"; };
+		E782962CD6306856CB182C765E56FF3D /* YCUIKit-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "YCUIKit-prefix.pch"; sourceTree = "<group>"; };
+		E8472B7F95613591D60FF67327898053 /* YCUIKit.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = YCUIKit.h; path = YCUIKit/Classes/YCUIKit.h; sourceTree = "<group>"; };
+		EBF90CB90B9568A9ECC31791ABB43C13 /* NSImage+ImageEffects.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSImage+ImageEffects.h"; path = "YCUIKit/Classes/NSImage+ImageEffects.h"; sourceTree = "<group>"; };
+		F72BD27966B414AF71EEA7C3057783E8 /* Pods-YCUIKit_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-YCUIKit_Example.modulemap"; sourceTree = "<group>"; };
+		F75F29E377B1D580CAB008CE23C0D580 /* UIView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = UIView.m; path = YCUIKit/Classes/UIView.m; sourceTree = "<group>"; };
+		FD3111692925BF67D3D59A8292A11886 /* UITextView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = UITextView.h; path = YCUIKit/Classes/UITextView.h; sourceTree = "<group>"; };
+		FD5CEF0A257CCB760CA4432B936E39B0 /* UILabel.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = UILabel.m; path = YCUIKit/Classes/UILabel.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		318B4674C7072F1C604BC9823C6237AD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FF9DE1008BFA23BDB63821269B3D8C80 /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E3788C2BBD4C2F87286639EF52459ED2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0B06F0336CF1694D0C5DFDC5F390A3FE /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		04C068A18C5413F804A2959126093416 /* OS X */ = {
+			isa = PBXGroup;
+			children = (
+				270DD1219F1E6CF00379D39F252D87C6 /* Cocoa.framework */,
+			);
+			name = "OS X";
+			sourceTree = "<group>";
+		};
+		22E3968A56613F503023A89633CCF981 /* Development Pods */ = {
+			isa = PBXGroup;
+			children = (
+				5CADA74B035A5160AE9F5D8DF0E8D1CF /* YCUIKit */,
+			);
+			name = "Development Pods";
+			sourceTree = "<group>";
+		};
+		39E9EE8210D861DFD82346C1F5EB7218 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				04C068A18C5413F804A2959126093416 /* OS X */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		5CADA74B035A5160AE9F5D8DF0E8D1CF /* YCUIKit */ = {
+			isa = PBXGroup;
+			children = (
+				EBF90CB90B9568A9ECC31791ABB43C13 /* NSImage+ImageEffects.h */,
+				A1DF46AF98AC21CC542EBED3C8D346DC /* NSImage+ImageEffects.m */,
+				A9F051C805794394AF439C588799AEEE /* UIActivityIndicatorView.h */,
+				843FC12BF5E531D20352341B8C6E35BB /* UIActivityIndicatorView.m */,
+				0B08FC55B8EF1069AC085A46D577D02A /* UIButton.h */,
+				2DB44301D578381AFCF138AC0BA47B3F /* UIButton.m */,
+				8BFADF32A44E39DF0B5A64B1A2A965B7 /* UIImageView.h */,
+				358E5122179306C12E8DA2489F609F0B /* UIImageView.m */,
+				14A017564D24364BE29CFB4B520252F4 /* UILabel.h */,
+				FD5CEF0A257CCB760CA4432B936E39B0 /* UILabel.m */,
+				8A7894B45DE95DA797C4C55B1D27ACC9 /* UISlider.h */,
+				00A4FA2E71B12C71D2F184EB628B5176 /* UISlider.m */,
+				DC9082C79895F095F1A2977903F91187 /* UITableView.h */,
+				DCE364F6BF6C7787B572FFA17A10BD76 /* UITableView.m */,
+				FD3111692925BF67D3D59A8292A11886 /* UITextView.h */,
+				4A4D2A10A667A590BACB0A7D4CE3DE19 /* UITextView.m */,
+				6CD7F4549186A602A157892C761A5876 /* UIView.h */,
+				F75F29E377B1D580CAB008CE23C0D580 /* UIView.m */,
+				7C571907CF43CE7D7F5B6AF3F8BA8CDF /* UIViewController.h */,
+				6778EF960A37ABF68ACFE542CB28FD08 /* UIViewController.m */,
+				4F84732A5D542963D9A81E90DB500E54 /* UIWebView.h */,
+				64E89C5EB3A4F75AF78FE04DAAB0373C /* UIWebView.m */,
+				E8472B7F95613591D60FF67327898053 /* YCUIKit.h */,
+				ED822860F81C8896B9E44E73A7B82ED4 /* Support Files */,
+			);
+			name = YCUIKit;
+			path = ../..;
+			sourceTree = "<group>";
+		};
+		75FB74A2BEC5E55CF4EAE35CA5EABCC9 /* Pods-YCUIKit_Example */ = {
+			isa = PBXGroup;
+			children = (
+				2F4DA1CAC29DB1565D20F657BDAABC90 /* Info.plist */,
+				F72BD27966B414AF71EEA7C3057783E8 /* Pods-YCUIKit_Example.modulemap */,
+				3EA5CA2C7CE31F2F1D46661ADCD5F4DA /* Pods-YCUIKit_Example-acknowledgements.markdown */,
+				7F721AA1D3E6555E3E3798160AFDE07B /* Pods-YCUIKit_Example-acknowledgements.plist */,
+				2D02A494C38F84D930DC274196603158 /* Pods-YCUIKit_Example-dummy.m */,
+				5B1FE71500E954BEB7B15A47962798C6 /* Pods-YCUIKit_Example-frameworks.sh */,
+				1C97EB4BAF2E2C442D728BA8A9FEA25D /* Pods-YCUIKit_Example-resources.sh */,
+				A4755B8CCA00631FA0533EF632720809 /* Pods-YCUIKit_Example-umbrella.h */,
+				3486E2A3C6FBBF566957B9E3CF72B410 /* Pods-YCUIKit_Example.debug.xcconfig */,
+				62D7ECB04FF7F3A4CB24C1A6386CD1BB /* Pods-YCUIKit_Example.release.xcconfig */,
+			);
+			name = "Pods-YCUIKit_Example";
+			path = "Target Support Files/Pods-YCUIKit_Example";
+			sourceTree = "<group>";
+		};
+		7DB346D0F39D3F0E887471402A8071AB = {
+			isa = PBXGroup;
+			children = (
+				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
+				22E3968A56613F503023A89633CCF981 /* Development Pods */,
+				39E9EE8210D861DFD82346C1F5EB7218 /* Frameworks */,
+				7F27222406C00CB1EE4E836D782D4A19 /* Products */,
+				BDA582E5FA3C160F9AC9B5E4DAD3D368 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		7F27222406C00CB1EE4E836D782D4A19 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1CBE455F671951350541CE6A6BDC8C29 /* Pods_YCUIKit_Example.framework */,
+				1110518FC098C3DF102CF120ADBC6D59 /* YCUIKit.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		BDA582E5FA3C160F9AC9B5E4DAD3D368 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				75FB74A2BEC5E55CF4EAE35CA5EABCC9 /* Pods-YCUIKit_Example */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		ED822860F81C8896B9E44E73A7B82ED4 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				3C0890B9AA37066D024E9B20417109AA /* Info.plist */,
+				B23815951EEA4D22C84D621144C1F766 /* YCUIKit.modulemap */,
+				060C0DB666D4C05A3EE2E592C83306C4 /* YCUIKit.xcconfig */,
+				73E7B8D7DCD3D9861FE442F8F6BF72B2 /* YCUIKit-dummy.m */,
+				E782962CD6306856CB182C765E56FF3D /* YCUIKit-prefix.pch */,
+				B4F992C9094BB80008717960975916D0 /* YCUIKit-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "Example/Pods/Target Support Files/YCUIKit";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		601198E177660F670C5C861E21DBB37B /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DF32934A8DAB1945BBB036415F9E3E90 /* NSImage+ImageEffects.h in Headers */,
+				06100A9BC0F877CF93B5B4B9322E91CF /* UIActivityIndicatorView.h in Headers */,
+				33DD4543C15556154FABD7194ED01D69 /* UIButton.h in Headers */,
+				DCEB7768DA42308024FBB2BD5525D78C /* UIImageView.h in Headers */,
+				2A112AA1DD05A102813ECBB76AE885EB /* UILabel.h in Headers */,
+				B783D3CE4C8B6DF24CDAFCA7CD6E6566 /* UISlider.h in Headers */,
+				08E524F5B61CEB3D35BE35F6C28789C2 /* UITableView.h in Headers */,
+				703B6222B40DBE7F758533E237DC21D7 /* UITextView.h in Headers */,
+				6CA1BAF482CE0ABA6BE773864DCD875E /* UIView.h in Headers */,
+				0351FCD58FC7022D5787CA4AD87DAE1A /* UIViewController.h in Headers */,
+				3D518EC1D7C99D84B7F2F9407D3CB710 /* UIWebView.h in Headers */,
+				179063151F6BA7260FCA833DABE1FF20 /* YCUIKit-umbrella.h in Headers */,
+				ABF870F568060D5C6FA7B85FD8357DA1 /* YCUIKit.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EA465CB92CBCBB096A67F4AEE2FA4D7B /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A7086B8E81FCD716B7CAA559DD69DEF6 /* Pods-YCUIKit_Example-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		69C22C0F51758F5F8E0424166F28A5CE /* Pods-YCUIKit_Example */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C58F22359344BD1B02D5E9ED6852D02A /* Build configuration list for PBXNativeTarget "Pods-YCUIKit_Example" */;
+			buildPhases = (
+				0F4A6D7D98BF6D7CF7403E025875828D /* Sources */,
+				E3788C2BBD4C2F87286639EF52459ED2 /* Frameworks */,
+				EA465CB92CBCBB096A67F4AEE2FA4D7B /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				0AACC47CFB861C6D5EECF74D264702D0 /* PBXTargetDependency */,
+			);
+			name = "Pods-YCUIKit_Example";
+			productName = "Pods-YCUIKit_Example";
+			productReference = 1CBE455F671951350541CE6A6BDC8C29 /* Pods_YCUIKit_Example.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		BA3CCD62D562A5A3C4DDEC5A5E012DEC /* YCUIKit */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8C7E54D687D42486697AAACB12F4660A /* Build configuration list for PBXNativeTarget "YCUIKit" */;
+			buildPhases = (
+				565C51E82222E933178C9E4552C2954B /* Sources */,
+				318B4674C7072F1C604BC9823C6237AD /* Frameworks */,
+				601198E177660F670C5C861E21DBB37B /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = YCUIKit;
+			productName = YCUIKit;
+			productReference = 1110518FC098C3DF102CF120ADBC6D59 /* YCUIKit.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D41D8CD98F00B204E9800998ECF8427E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0830;
+				LastUpgradeCheck = 0700;
+			};
+			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
+			productRefGroup = 7F27222406C00CB1EE4E836D782D4A19 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				69C22C0F51758F5F8E0424166F28A5CE /* Pods-YCUIKit_Example */,
+				BA3CCD62D562A5A3C4DDEC5A5E012DEC /* YCUIKit */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		0F4A6D7D98BF6D7CF7403E025875828D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				93BE028DFC6CA6550B263E4E639173FB /* Pods-YCUIKit_Example-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		565C51E82222E933178C9E4552C2954B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B708539BC53904A195C8280C620C49D3 /* NSImage+ImageEffects.m in Sources */,
+				D56BA009F0F8E507CB37D5C4958463A7 /* UIActivityIndicatorView.m in Sources */,
+				5C81203B7CD1C934E2C3C7C0108CB5C4 /* UIButton.m in Sources */,
+				3420747B98411FC908E7A8F039D80DE1 /* UIImageView.m in Sources */,
+				D6DAF15C200CBB9E6312FAB805E538CF /* UILabel.m in Sources */,
+				377FC936974B987A779687829E5D2B2C /* UISlider.m in Sources */,
+				98C75266F3CA5BAF1AECCA6245D3EB23 /* UITableView.m in Sources */,
+				395916B5A66CC03691850D76483AB20E /* UITextView.m in Sources */,
+				D87D076B4973A8D9AD95CEF65AE25D2E /* UIView.m in Sources */,
+				F3629257C52D5C91E8BBE70939B7DFED /* UIViewController.m in Sources */,
+				9897C77EFB1567C5B867EDA9FBE6937B /* UIWebView.m in Sources */,
+				4F1C4C138F59ECD3D7E4D48C4616671F /* YCUIKit-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		0AACC47CFB861C6D5EECF74D264702D0 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = YCUIKit;
+			target = BA3CCD62D562A5A3C4DDEC5A5E012DEC /* YCUIKit */;
+			targetProxy = AFF8CF7364D8535ED708936DE141D39F /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		0544B024BF78E6E9971880C2DE87881A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3486E2A3C6FBBF566957B9E3CF72B410 /* Pods-YCUIKit_Example.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_VERSION = A;
+				INFOPLIST_FILE = "Target Support Files/Pods-YCUIKit_Example/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
+				MODULEMAP_FILE = "Target Support Files/Pods-YCUIKit_Example/Pods-YCUIKit_Example.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_YCUIKit_Example;
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		6F7397686D154CB035546EF40E3BC0EC /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 62D7ECB04FF7F3A4CB24C1A6386CD1BB /* Pods-YCUIKit_Example.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_VERSION = A;
+				INFOPLIST_FILE = "Target Support Files/Pods-YCUIKit_Example/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
+				MODULEMAP_FILE = "Target Support Files/Pods-YCUIKit_Example/Pods-YCUIKit_Example.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_YCUIKit_Example;
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		7E7576B470841552A122B7A01361278A /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 060C0DB666D4C05A3EE2E592C83306C4 /* YCUIKit.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_VERSION = A;
+				GCC_PREFIX_HEADER = "Target Support Files/YCUIKit/YCUIKit-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/YCUIKit/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MODULEMAP_FILE = "Target Support Files/YCUIKit/YCUIKit.modulemap";
+				PRODUCT_NAME = YCUIKit;
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		818F203F8EB5BAC17E2B6BAD5927AA36 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 060C0DB666D4C05A3EE2E592C83306C4 /* YCUIKit.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_VERSION = A;
+				GCC_PREFIX_HEADER = "Target Support Files/YCUIKit/YCUIKit-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/YCUIKit/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MODULEMAP_FILE = "Target Support Files/YCUIKit/YCUIKit.modulemap";
+				PRODUCT_NAME = YCUIKit;
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		C4D8B0A6AD4EF0183B7B90C84630289B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+		ED3BC417A9BAAB2DFA8DA863F8CA89C0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ED3BC417A9BAAB2DFA8DA863F8CA89C0 /* Debug */,
+				C4D8B0A6AD4EF0183B7B90C84630289B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8C7E54D687D42486697AAACB12F4660A /* Build configuration list for PBXNativeTarget "YCUIKit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				818F203F8EB5BAC17E2B6BAD5927AA36 /* Debug */,
+				7E7576B470841552A122B7A01361278A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C58F22359344BD1B02D5E9ED6852D02A /* Build configuration list for PBXNativeTarget "Pods-YCUIKit_Example" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0544B024BF78E6E9971880C2DE87881A /* Debug */,
+				6F7397686D154CB035546EF40E3BC0EC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+}

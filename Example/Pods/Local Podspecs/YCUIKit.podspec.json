@@ -1,0 +1,22 @@
+{
+  "name": "YCUIKit",
+  "version": "0.1.0",
+  "summary": "Fake UIKit For macOS.",
+  "description": "Fake UIKit For macOS.",
+  "homepage": "https://github.com/youngcube/YCUIKit",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "youngcube": "youngcube@hotmail.com"
+  },
+  "source": {
+    "git": "https://github.com/youngcube/YCUIKit.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "osx": "10.10"
+  },
+  "source_files": "YCUIKit/Classes/**/*"
+}
