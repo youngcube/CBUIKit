@@ -22,6 +22,8 @@ typedef NS_ENUM(NSInteger, UIViewContentMode) {
     UIViewContentModeBottomLeft,
     UIViewContentModeBottomRight,
 };
+NSData *UIImagePNGRepresentation(NSImage *image);
+NSData *UIImageJPEGRepresentation(NSImage *image, float quality);
 typedef NSImage UIImage;
 @interface UIImageView : NSImageView
 @property(nonatomic, strong) NSArray <UIImage *> *animationImages;
@@ -29,6 +31,7 @@ typedef NSImage UIImage;
 @property (nonatomic) CGFloat alpha;
 @property (nonatomic) UIViewContentMode contentMode;
 @property (nonatomic, copy) NSColor *backgroundColor;
+@property (nonatomic) BOOL clipsToBounds;
 - (instancetype)initWithImage:(UIImage *)image;
 - (void)startAnimating;
 - (void)stopAnimating;

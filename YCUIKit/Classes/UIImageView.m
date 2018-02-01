@@ -8,6 +8,33 @@
 
 #import "UIImageView.h"
 
+NSData *UIImagePNGRepresentation(NSImage *image)
+{
+    CGImageSourceRef source = CGImageSourceCreateWithData((CFDataRef)[image TIFFRepresentation], NULL);
+    CGImageRef maskRef =  CGImageSourceCreateImageAtIndex(source, 0, NULL);
+    
+    NSBitmapImageRep *newRep = [[NSBitmapImageRep alloc] initWithCGImage:maskRef];
+    
+    NSData *pngData = [newRep representationUsingType:NSPNGFileType properties:[NSDictionary dictionaryWithObjectsAndKeys:
+                                                                                [NSNumber numberWithBool:YES], NSImageProgressive, nil]];
+    return pngData;
+}
+
+NSData *UIImageJPEGRepresentation(NSImage *image, float quality)
+{
+    CGImageSourceRef source = CGImageSourceCreateWithData((CFDataRef)[image TIFFRepresentation], NULL);
+    CGImageRef maskRef =  CGImageSourceCreateImageAtIndex(source, 0, NULL);
+    
+    NSBitmapImageRep *newRep = [[NSBitmapImageRep alloc] initWithCGImage:maskRef];
+    
+    NSNumber *compressionFactor = [NSNumber numberWithFloat:quality];
+    NSDictionary *imageProps = [NSDictionary dictionaryWithObject:compressionFactor
+                                                           forKey:NSImageCompressionFactor];
+    
+    NSData *jpgData = [newRep representationUsingType:NSJPEGFileType properties:imageProps];
+    return jpgData;
+}
+
 @implementation UIImageView
 
 - (instancetype)initWithImage:(UIImage *)image
