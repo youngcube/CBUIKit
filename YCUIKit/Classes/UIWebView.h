@@ -12,6 +12,8 @@ NS_ASSUME_NONNULL_BEGIN
 - (void)loadRequest:(NSURLRequest *)request;
 - (void)loadHTMLString:(NSString *)string baseURL:(nullable NSURL *)baseURL;
 - (BOOL)endEditing:(BOOL)force;
+- (void)evaluateJavaScript:(NSString *)javaScriptString completionHandler:(void (^ _Nullable)(_Nullable id, NSError * _Nullable error))completionHandler;
+- (void)evaluateJavaScript:(NSString *)javaScriptString;
 @end
 
 @protocol EuWebTableViewCellDelegate <NSObject>

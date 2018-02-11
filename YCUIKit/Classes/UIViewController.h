@@ -55,6 +55,7 @@ typedef NS_ENUM(NSInteger, UIBarButtonSystemItem) {
 @interface UINavigationItem : NSObject
 @property (nonatomic, strong) UIBarButtonItem *leftBarButtonItem;
 @property (nonatomic, strong) UIBarButtonItem *rightBarButtonItem;
+@property (nonatomic, strong) UIBarButtonItem *backBarButtonItem;
 @end
 
 @class UINavigationController;

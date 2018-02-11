@@ -25,6 +25,16 @@
     return YES;
 }
 
+- (void)evaluateJavaScript:(NSString *)javaScriptString completionHandler:(void (^ _Nullable)(_Nullable id, NSError * _Nullable error))completionHandler
+{
+    [self stringByEvaluatingJavaScriptFromString:javaScriptString];
+}
+
+- (void)evaluateJavaScript:(NSString *)javaScriptString
+{
+    [self stringByEvaluatingJavaScriptFromString:javaScriptString];
+}
+
 @end
 @interface EuWebTableViewCell () <WebPolicyDelegate, WebFrameLoadDelegate>
 

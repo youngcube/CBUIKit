@@ -44,6 +44,11 @@
 
 @implementation UIView
 
+- (void)setContentCompressionResistancePriority:(UILayoutPriority)priority forAxis:(UILayoutConstraintAxis)axis
+{
+    
+}
+
 + (void)transitionWithView:(__kindof NSView *)view duration:(NSTimeInterval)duration options:(UIViewAnimationOptions)options animations:(void (^)(void))animations completion:(void (^)(BOOL))completion
 {
     [NSAnimationContext runAnimationGroup:^(NSAnimationContext *context) {

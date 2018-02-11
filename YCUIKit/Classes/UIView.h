@@ -107,6 +107,12 @@ typedef NS_OPTIONS(NSUInteger, UIControlEvents) {
     UIControlEventAllEvents                                         = 0xFFFFFFFF
 };
 
+typedef NS_ENUM(NSInteger, UILayoutConstraintAxis) {
+    UILayoutConstraintAxisHorizontal = 0,
+    UILayoutConstraintAxisVertical = 1
+};
+
+typedef float UILayoutPriority NS_TYPED_EXTENSIBLE_ENUM;
 
 + (void)transitionWithView:(__kindof NSView *)view duration:(NSTimeInterval)duration options:(UIViewAnimationOptions)options animations:(void (^ __nullable)(void))animations completion:(void (^ __nullable)(BOOL finished))completion;
 
@@ -119,6 +125,7 @@ typedef NS_OPTIONS(NSUInteger, UIControlEvents) {
 - (void)layoutSubviews;
 - (void)setNeedsDisplay;
 - (void)addTarget:(id)target action:(SEL)action forControlEvents:(UIControlEvents)controlEvents;
+- (void)setContentCompressionResistancePriority:(UILayoutPriority)priority forAxis:(UILayoutConstraintAxis)axis;
 @end
 
 @interface UIGestureRecognizer : NSGestureRecognizer
