@@ -123,14 +123,14 @@ CGFloat const UITableViewAutomaticDimension = 80;
 
 - (void)scrollViewWillStartLiveScroll:(NSNotification *)notification
 {
-    if ([self.delegate respondsToSelector:@selector(scrollViewDidScroll:)]){
+    if ([self.delegate respondsToSelector:@selector(scrollViewWillBeginDragging:)]){
         [self.delegate scrollViewWillBeginDragging:self];
     }
 }
 
 - (void)scrollViewDidEndLiveScroll:(NSNotification *)notification
 {
-    if ([self.delegate respondsToSelector:@selector(scrollViewDidScroll:)]){
+    if ([self.delegate respondsToSelector:@selector(scrollViewDidEndDecelerating:)]){
         [self.delegate scrollViewDidEndDecelerating:self];
     }
 }
