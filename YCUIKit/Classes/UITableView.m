@@ -546,7 +546,11 @@ static void UITableViewCommonInit(UITableView *tableView) {
     if (row > [self.inner_outlineView numberOfRows]){
         return nil;
     }
-    return [self.inner_outlineView viewAtColumn:0 row:[self indexPathIntoRow:indexPath] makeIfNecessary:YES];
+    NSInteger index = [self indexPathIntoRow:indexPath];
+    if (index > 0){
+        return [self.inner_outlineView viewAtColumn:0 row:index makeIfNecessary:YES];
+    }
+    return nil;
 }
 
 - (void)p_reloadData
