@@ -36,6 +36,7 @@ typedef NS_ENUM(NSInteger, UIButtonType) {
 @property (nonatomic) CGAffineTransform transform;
 @property (nonatomic, getter=isSelected) BOOL selected;
 @property (nonatomic, strong) UILabel *titleLabel;
+@property (nonatomic) BOOL clipsToBounds;
 @property (nonatomic, copy) NSColor *backgroundColor;
 @property (nonatomic) BOOL adjustsImageWhenDisabled;
 @property (nonatomic) BOOL adjustsImageWhenHighlighted;
