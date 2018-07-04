@@ -53,7 +53,7 @@
 
 - (void)commonInit
 {
-    [self setButtonType:NSButtonTypeMomentaryPushIn];
+    [self setButtonType:7]; //NSButtonTypeMomentaryPushIn
     [self setWantsLayer:YES];
     self.layer.anchorPoint = NSMakePoint(0.5, 0.5);
 }

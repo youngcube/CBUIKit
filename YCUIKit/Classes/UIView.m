@@ -10,6 +10,10 @@
 #import <objc/objc-runtime.h>
 #import <QuartzCore/QuartzCore.h>
 
+#ifndef NSAppKitVersionNumber10_13
+#define NSAppKitVersionNumber10_13 1561
+#endif
+
 @implementation NSScreen (YCUIKit)
 
 - (CGFloat)scale
@@ -214,7 +218,7 @@
 - (void)drawRect:(NSRect)dirtyRect
 {
     [super drawRect:dirtyRect];
-    if (@available(macOS 10.14, *)){
+    if (floor(NSAppKitVersionNumber) > NSAppKitVersionNumber10_13) {
         if (self.backgroundColor){
             CGContextRef ctx = (CGContextRef)[[NSGraphicsContext currentContext] graphicsPort];
             [self.backgroundColor setFill];
@@ -243,7 +247,7 @@
 - (void)setBackgroundColor:(NSColor *)backgroundColor
 {
     objc_setAssociatedObject(self, @selector(backgroundColor), backgroundColor, OBJC_ASSOCIATION_RETAIN_NONATOMIC);
-    if (@available(macOS 10.14, *)){
+    if (floor(NSAppKitVersionNumber) > NSAppKitVersionNumber10_13){
         
     }else{
         self.layer.backgroundColor = backgroundColor.CGColor;

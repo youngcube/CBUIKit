@@ -10,7 +10,7 @@
 typedef NS_ENUM(NSInteger, UIActivityIndicatorViewStyle) {
     UIActivityIndicatorViewStyleWhiteLarge,
     UIActivityIndicatorViewStyleWhite,
-    UIActivityIndicatorViewStyleGray __TVOS_PROHIBITED,
+    UIActivityIndicatorViewStyleGray,
 };
 @interface UIActivityIndicatorView : NSProgressIndicator
 

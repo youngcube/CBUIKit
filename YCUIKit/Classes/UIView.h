@@ -18,6 +18,7 @@ typedef NS_OPTIONS(NSUInteger, UIViewAutoresizing) {
 };
 
 #pragma mark - UIView Like
+NS_ASSUME_NONNULL_BEGIN
 @class UIView;
 @protocol UIViewDelegate <NSObject>
 - (void)uiview:(UIView *_Nonnull)view viewDidHidden:(BOOL)hidden;
@@ -35,7 +36,6 @@ typedef NS_OPTIONS(NSUInteger, UIViewAutoresizing) {
 @end
 
 @interface UIView : NSView
-NS_ASSUME_NONNULL_BEGIN
 typedef NS_OPTIONS(NSUInteger, UIViewAnimationOptions) {
     UIViewAnimationOptionLayoutSubviews            = 1 <<  0,
     UIViewAnimationOptionAllowUserInteraction      = 1 <<  1, // turn on user interaction while animating
@@ -112,7 +112,7 @@ typedef NS_ENUM(NSInteger, UILayoutConstraintAxis) {
     UILayoutConstraintAxisVertical = 1
 };
 
-typedef float UILayoutPriority NS_TYPED_EXTENSIBLE_ENUM;
+typedef float UILayoutPriority;
 
 + (void)transitionWithView:(__kindof NSView *)view duration:(NSTimeInterval)duration options:(UIViewAnimationOptions)options animations:(void (^ __nullable)(void))animations completion:(void (^ __nullable)(BOOL finished))completion;
 

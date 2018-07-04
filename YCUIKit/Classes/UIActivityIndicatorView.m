@@ -18,6 +18,22 @@
     return self;
 }
 
+- (instancetype)initWithCoder:(NSCoder *)decoder
+{
+    if (self = [super init]){
+        
+    }
+    return self;
+}
+
+- (instancetype)initWithFrame:(NSRect)frameRect
+{
+    if (self = [super initWithFrame:frameRect]){
+        
+    }
+    return self;
+}
+
 - (void)startAnimating
 {
     [self startAnimation:nil];

@@ -10,8 +10,9 @@
 #import "UILabel.h"
 #import "UIViewController.h"
 
+NS_ASSUME_NONNULL_BEGIN
 @interface NSBundle(UINibLoadingAdditions)
-- (nullable NSArray *)loadNibNamed:(NSString *)name owner:(nullable id)owner options:(nullable NSDictionary *)options;
+- (nullable NSArray *)loadNibNamed:(nonnull NSString *)name owner:(nullable id)owner options:(nullable NSDictionary *)options;
 @end
 
 @class UIView;
@@ -102,7 +103,7 @@ typedef NS_ENUM(NSInteger, UITableViewCellSeparatorStyle) {
     UITableViewCellSeparatorStyleNone,
     UITableViewCellSeparatorStyleSingleLine,
     UITableViewCellSeparatorStyleSingleLineEtched   // This separator style is only supported for grouped style table views currently
-} __TVOS_PROHIBITED;
+} ;
 
 typedef NS_ENUM(NSInteger, UITableViewCellSelectionStyle) {
     UITableViewCellSelectionStyleNone,
@@ -125,9 +126,9 @@ typedef NS_ENUM(NSInteger, UITableViewCellEditingStyle) {
 typedef NS_ENUM(NSInteger, UITableViewCellAccessoryType) {
     UITableViewCellAccessoryNone,                                                      // don't show any accessory view
     UITableViewCellAccessoryDisclosureIndicator,                                       // regular chevron. doesn't track
-    UITableViewCellAccessoryDetailDisclosureButton __TVOS_PROHIBITED,                 // info button w/ chevron. tracks
+    UITableViewCellAccessoryDetailDisclosureButton ,                 // info button w/ chevron. tracks
     UITableViewCellAccessoryCheckmark,                                                 // checkmark. doesn't track
-    UITableViewCellAccessoryDetailButton NS_ENUM_AVAILABLE_IOS(7_0)  __TVOS_PROHIBITED // info button. tracks
+    UITableViewCellAccessoryDetailButton NS_ENUM_AVAILABLE_IOS(7_0)   // info button. tracks
 };
 
 typedef NS_OPTIONS(NSUInteger, UITableViewCellStateMask) {
@@ -291,7 +292,7 @@ typedef NS_ENUM(NSInteger, UITableViewRowActionStyle) {
 
 // Accessories (disclosures).
 
-- (UITableViewCellAccessoryType)tableView:(UITableView *)tableView accessoryTypeForRowWithIndexPath:(NSIndexPath *)indexPath NS_DEPRECATED_IOS(2_0, 3_0) __TVOS_PROHIBITED;
+- (UITableViewCellAccessoryType)tableView:(UITableView *)tableView accessoryTypeForRowWithIndexPath:(NSIndexPath *)indexPath NS_DEPRECATED_IOS(2_0, 3_0) ;
 - (void)tableView:(UITableView *)tableView accessoryButtonTappedForRowWithIndexPath:(NSIndexPath *)indexPath;
 
 // Selection
@@ -320,8 +321,8 @@ typedef NS_ENUM(NSInteger, UITableViewRowActionStyle) {
 - (BOOL)tableView:(UITableView *)tableView shouldIndentWhileEditingRowAtIndexPath:(NSIndexPath *)indexPath;
 
 // The willBegin/didEnd methods are called whenever the 'editing' property is automatically changed by the table (allowing insert/delete/move). This is done by a swipe activating a single row
-- (void)tableView:(UITableView *)tableView willBeginEditingRowAtIndexPath:(NSIndexPath *)indexPath __TVOS_PROHIBITED;
-- (void)tableView:(UITableView *)tableView didEndEditingRowAtIndexPath:(nullable NSIndexPath *)indexPath __TVOS_PROHIBITED;
+- (void)tableView:(UITableView *)tableView willBeginEditingRowAtIndexPath:(NSIndexPath *)indexPath ;
+- (void)tableView:(UITableView *)tableView didEndEditingRowAtIndexPath:(nullable NSIndexPath *)indexPath ;
 
 // Moving/reordering
 
@@ -417,7 +418,7 @@ typedef NS_ENUM(NSInteger, UITableViewRowActionStyle) {
 
 @property (nonatomic) UITableViewCellSeparatorStyle separatorStyle; // default is UITableViewCellSeparatorStyleSingleLine
 @property (nonatomic, strong, nullable) NSColor *separatorColor; // default is the standard separator gray
-//@property (nonatomic, copy, nullable) UIVisualEffect *separatorEffect NS_AVAILABLE_IOS(8_0) UI_APPEARANCE_SELECTOR __TVOS_PROHIBITED; // effect to apply to table separators
+//@property (nonatomic, copy, nullable) UIVisualEffect *separatorEffect NS_AVAILABLE_IOS(8_0) UI_APPEARANCE_SELECTOR ; // effect to apply to table separators
 
 @property (nonatomic) BOOL cellLayoutMarginsFollowReadableWidth NS_AVAILABLE_IOS(9_0); // if cell margins are derived from the width of the readableContentGuide.
 
@@ -552,4 +553,4 @@ typedef NS_ENUM(NSInteger, UITableViewRowActionStyle) {
 
 @end
 
-
+NS_ASSUME_NONNULL_END
