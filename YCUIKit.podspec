@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'YCUIKit'
-  s.version          = '0.1.6'
+  s.version          = '0.2.0'
   s.summary          = 'Fake UIKit For macOS.'
 
   s.description      = <<-DESC

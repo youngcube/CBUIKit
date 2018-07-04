@@ -146,7 +146,7 @@ typedef float UILayoutPriority NS_TYPED_EXTENSIBLE_ENUM;
 @property (nonatomic, assign) CGSize size;
 @property (nonatomic, assign) CGPoint origin;
 @property (nonatomic, assign) CGPoint center;
-@property (nonatomic, copy) NSColor *backgroundColor;
+@property (nonatomic, copy, nullable) IBInspectable NSColor *backgroundColor;
 @property (nonatomic, assign) CGFloat alpha;
 @end
 

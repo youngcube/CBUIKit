@@ -211,6 +211,18 @@
     
 }
 
+- (void)drawRect:(NSRect)dirtyRect
+{
+    [super drawRect:dirtyRect];
+    if (@available(macOS 10.14, *)){
+        if (self.backgroundColor){
+            CGContextRef ctx = (CGContextRef)[[NSGraphicsContext currentContext] graphicsPort];
+            [self.backgroundColor setFill];
+            CGContextFillRect(ctx, self.bounds);
+        }
+    }
+}
+
 @end
 
 @implementation UIGestureRecognizer
@@ -225,18 +237,17 @@
 
 - (NSColor *)backgroundColor
 {
-    if (self.layer.backgroundColor){
-        return [NSColor colorWithCGColor:self.layer.backgroundColor];
-    }
-    return nil;
+    return objc_getAssociatedObject(self, @selector(backgroundColor));
 }
 
 - (void)setBackgroundColor:(NSColor *)backgroundColor
 {
-    if (!self.wantsLayer){
-        [self setWantsLayer:YES];
+    objc_setAssociatedObject(self, @selector(backgroundColor), backgroundColor, OBJC_ASSOCIATION_RETAIN_NONATOMIC);
+    if (@available(macOS 10.14, *)){
+        
+    }else{
+        self.layer.backgroundColor = backgroundColor.CGColor;
     }
-    self.layer.backgroundColor = backgroundColor.CGColor;
 }
 
 #pragma mark 重写x
