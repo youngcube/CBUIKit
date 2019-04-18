@@ -23,7 +23,7 @@ typedef NS_OPTIONS(NSUInteger, XUIRectCorner) {
     XUIRectCornerTopRight    = 1 << 1,
     XUIRectCornerBottomLeft  = 1 << 2,
     XUIRectCornerBottomRight = 1 << 3,
-    XUIRectCornerAllCorners  = ~0
+    XUIRectCornerAllCorners  = ~0UL
 };
 
 typedef NS_OPTIONS(NSUInteger, UIRectCorner) {
